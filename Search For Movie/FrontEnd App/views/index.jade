@@ -1,0 +1,19 @@
+
+extends layout
+
+block content
+
+  |<div id="inputCol">
+  |<div id="logo">
+  img#logo(src="../images/mambuLogo.png" alt="MAMBU Logo")
+  |</div>
+  |<form id="mainForm" action="/" method="POST">
+  |<input id="queryTxt" type="text" name="queryTxt" placeholder="Enter a movie title"/>
+  |<input id="sendBtn" type="submit" name="submitBtn" value="Search"/>
+  |</form>
+  |</div>
+  |<div id="outputCol">
+  |<div id="movieInfo">
+  pre=movieInfo
+  |</div>
+  |</div>

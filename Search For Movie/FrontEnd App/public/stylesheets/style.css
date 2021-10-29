@@ -1,0 +1,98 @@
+html,body,#root{
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+a {
+  color: #00B7FF;
+}
+#inputCol{
+  display: flex;
+  flex-direction: column;
+  border-left: 3rem solid #4fb645;
+}
+#outputCol{
+  padding-top: 2%;
+  display: flex;
+  text-align:left;
+  margin: 0 auto;
+  background-color: white;
+  word-wrap: break-word;
+  background: rgb(198,221,235);
+  background: linear-gradient(180deg, rgba(198,221,235,1) 0%, rgba(255,255,255,1) 100%);
+}
+#movieInfo{
+  font-size: 1rem;
+  min-height: 90%;
+  width: 90%;
+  overflow: auto;
+  position: relative;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid rgba(229,231,235);
+  border-radius: .375rem;
+  box-shadow:0 2px 24px 0 rgba(31,66,72,0.16);
+ ;
+}
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+#mainForm{
+  margin-top: 20%;
+  text-align: center;
+}
+#queryTxt{
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  font-size: 2rem;
+  border: solid #52924c;
+  border-radius: 3px;
+}
+#queryTxt::placeholder{
+  color: rgb(207, 207, 207);
+  font-size: 1.5rem;
+}
+
+#sendBtn{
+  font-size: 1.5rem;
+  margin: 5%;
+  width: 30%;
+  padding: 2%;
+  background: #4fb645;
+  color: #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  border: 1px solid #4fb645;
+  transition: background-color .3s;
+}
+#sendBtn:hover{
+  background-color: black;
+  transition: background-color .3s;
+}
+#sendBtn:active{
+  color: black;
+  background-color: white;
+  border-color: black;
+  transition: background-color .3s;
+}
+#logo{
+ width: 100%;
+}
+
+@media (min-width: 960px) {
+  #inputCol{
+    flex: 20%;
+  }
+  #outputCol{
+    flex:70%;
+  }
+}
+
